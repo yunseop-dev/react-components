@@ -9,7 +9,7 @@ interface IAccordionItem {
     onClick?: MouseEventHandler | undefined;
 }
 
-const AccordionItem: React.FC<IAccordionItem> = ({ title, content, isActive, onClick }) => {
+const AccordionItem: React.FC<IAccordionItem> = React.memo(({ title, content, isActive, onClick }) => {
     const expand = isActive ? 'active' : ''
     return <div className="accordion-item">
         <button className={`accordion-header ${expand}`} onClick={onClick}>
@@ -18,7 +18,7 @@ const AccordionItem: React.FC<IAccordionItem> = ({ title, content, isActive, onC
         </button>
         <div className={`accordion-body ${expand}`}>{content}</div>
     </div >
-}
+})
 
 const LOREM = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse doloremque sunt, culpa tempora unde in reiciendis neque voluptatem! Accusantium cupiditate at expedita dolorem consequatur mollitia aut deserunt illo. Eligendi, quibusdam.'
 
@@ -62,4 +62,4 @@ const Accordion: React.FC = () => {
     );
 }
 
-export default Accordion;
+export default React.memo(Accordion);
