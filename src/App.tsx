@@ -3,6 +3,7 @@ import Accordion from './components/Accordion';
 import NeumorphismCard from './components/NeumorphismCard';
 import GlassmorphismCard from './components/GlassmorphismCard';
 import BlurCard from './components/BlurCard';
+import RotatingImageGallery from './components/RotatingImageGallery';
 
 const App: React.FC = () => {
   return (<>
@@ -11,6 +12,9 @@ const App: React.FC = () => {
       <NeumorphismCard />
       <GlassmorphismCard />
       <BlurCard />
+    </div>
+    <div>
+      <RotatingImageGallery />
     </div>
   </>
   );
