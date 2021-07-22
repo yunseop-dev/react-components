@@ -6,6 +6,7 @@ import BlurCard from './components/BlurCard';
 import RotatingImageGallery from './components/RotatingImageGallery';
 import ElasticLine from './components/ElasticLine';
 import IsometricSocialMediaIcon from './components/IsometricSocialMediaIcon';
+import LiquidText from './components/LiquidText';
 
 const App: React.FC = () => {
   return (<>
@@ -23,6 +24,9 @@ const App: React.FC = () => {
     </div>
     <div>
       <IsometricSocialMediaIcon />
+    </div>
+    <div>
+      <LiquidText />
     </div>
   </>
   );
