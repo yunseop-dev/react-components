@@ -5,6 +5,7 @@ import GlassmorphismCard from './components/GlassmorphismCard';
 import BlurCard from './components/BlurCard';
 import RotatingImageGallery from './components/RotatingImageGallery';
 import ElasticLine from './components/ElasticLine';
+import IsometricSocialMediaIcon from './components/IsometricSocialMediaIcon';
 
 const App: React.FC = () => {
   return (<>
@@ -19,6 +20,9 @@ const App: React.FC = () => {
     </div>
     <div>
       <ElasticLine />
+    </div>
+    <div>
+      <IsometricSocialMediaIcon />
     </div>
   </>
   );
