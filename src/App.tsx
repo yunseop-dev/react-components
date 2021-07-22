@@ -4,6 +4,7 @@ import NeumorphismCard from './components/NeumorphismCard';
 import GlassmorphismCard from './components/GlassmorphismCard';
 import BlurCard from './components/BlurCard';
 import RotatingImageGallery from './components/RotatingImageGallery';
+import ElasticLine from './components/ElasticLine';
 
 const App: React.FC = () => {
   return (<>
@@ -15,6 +16,9 @@ const App: React.FC = () => {
     </div>
     <div>
       <RotatingImageGallery />
+    </div>
+    <div>
+      <ElasticLine />
     </div>
   </>
   );
