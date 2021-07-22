@@ -16,7 +16,7 @@ const RotatingImageGallery: React.FC = () => {
         <div className={styles.wrapper}>
             <div className={styles.box}>
                 {images.map((item, i) =>
-                    <span key={i} style={{ margin: '1px', transform: `rotateY(${45 * (i + 1)}deg) translateZ(400px)` }}>
+                    <span key={i} style={{ transform: `rotateY(${45 * (i + 1)}deg) translateZ(400px)` }}>
                         <img src={item} alt={`my-pic ${i}`} />
                     </span>
                 )}
